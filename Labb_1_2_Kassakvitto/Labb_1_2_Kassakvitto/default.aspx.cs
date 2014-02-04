@@ -31,9 +31,12 @@ namespace Labb_1_2_Kassakvitto
             {
                 Model.Receipt receipt = new Model.Receipt(double.Parse(TotalAmount.Text));
 
-                Message.Text = receipt.Total.ToString("0.00");
+                Label1.Text += receipt.Subtotal.ToString("0.00") + " kr";
+                Label2.Text += receipt.DiscountRate.ToString("0") + " %";
+                Label3.Text += receipt.MoneyOff.ToString("0.00") + " kr";
+                Label4.Text += receipt.Total.ToString("0.00") + " kr";
 
-                Message.Visible = true;
+                Panel2.Visible = true;
             }
             
 

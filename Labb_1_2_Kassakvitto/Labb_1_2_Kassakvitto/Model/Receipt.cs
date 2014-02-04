@@ -41,11 +41,11 @@ namespace Labb_1_2_Kassakvitto.Model
             {
                 DiscountRate = 0;
             }
-            else if (Subtotal >= 500 || _subtotal <= 999)
+            else if (Subtotal >= 500 && _subtotal <= 999)
             {
                 DiscountRate = 5;
             }
-            else if (Subtotal >= 1000 || _subtotal <= 4999)
+            else if (Subtotal >= 1000 && _subtotal <= 4999)
             {
                 DiscountRate = 10;
             }
