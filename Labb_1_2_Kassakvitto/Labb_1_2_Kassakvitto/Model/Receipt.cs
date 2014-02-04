@@ -60,7 +60,8 @@ namespace Labb_1_2_Kassakvitto.Model
 
         public Receipt(double subtotal)
         {
-            this.Subtotal = subtotal;
+            Subtotal = subtotal;
+            Calculate(Subtotal);
         }
     }
 }

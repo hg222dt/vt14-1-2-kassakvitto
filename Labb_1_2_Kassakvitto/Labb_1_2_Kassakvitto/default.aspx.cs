@@ -11,7 +11,7 @@ namespace Labb_1_2_Kassakvitto
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Message.Text = "hej";
+            
             //this.TotalAmount.Attributes.Add("onkeypress", "CalculateButton_Click(this,'" + this.CalculateButton.ClientID + "')");
         }
 
@@ -30,7 +30,10 @@ namespace Labb_1_2_Kassakvitto
             if (IsValid)
             {
                 Model.Receipt receipt = new Model.Receipt(double.Parse(TotalAmount.Text));
+
                 Message.Text = receipt.Total.ToString("0.00");
+
+                Message.Visible = true;
             }
             
 

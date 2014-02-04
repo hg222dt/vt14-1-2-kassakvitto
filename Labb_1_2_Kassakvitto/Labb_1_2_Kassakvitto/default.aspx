@@ -18,8 +18,8 @@
                     <span> kr</span>
                     <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Talet måste var större än noll." ControlToValidate="TotalAmount" Operator="GreaterThan" Type="Integer" ValueToCompare="0" Display="Dynamic" />
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Fältet får inte vara tomt." ControlToValidate="TotalAmount" Display="Dynamic" />
-                    <asp:Label ID="Message" runat="server" Text="Label" ViewStateMode="Inherit" />
-                    <asp:Button ID="CalculateButton" runat="server" Text="Beräkna rabatt!" />
+                    <asp:Label ID="Message" runat="server" Text="Label" visible="false"/>
+                    <asp:Button ID="CalculateButton" runat="server" Text="Beräkna rabatt!" OnClick="CalculateButton_Click" />
                 </asp:Panel>
             </div>
         </form>
