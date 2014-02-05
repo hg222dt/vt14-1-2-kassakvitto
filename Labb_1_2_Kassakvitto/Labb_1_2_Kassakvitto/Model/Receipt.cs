@@ -35,6 +35,7 @@ namespace Labb_1_2_Kassakvitto.Model
 
         public double Total { get; set; }
 
+        //Räknar ut rabbat och hur mycket som ska betalas.
         private void Calculate(double subtotal)
         {
             if (Subtotal <= 499)
@@ -58,6 +59,7 @@ namespace Labb_1_2_Kassakvitto.Model
             Total = Subtotal - MoneyOff;
         }
 
+        //Konstruktor
         public Receipt(double subtotal)
         {
             Subtotal = subtotal;

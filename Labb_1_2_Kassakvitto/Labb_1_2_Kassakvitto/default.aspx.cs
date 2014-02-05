@@ -17,25 +17,20 @@ namespace Labb_1_2_Kassakvitto
 
         protected void CalculateButton_Click(object sender, EventArgs e)
         {
-            //Validera
-            //göra med get istället för post
-            //pusha ut kvitto
-            // mm mm
 
-            //Model.Receipt receipt = new Model.Receipt(double.Parse(TotalAmount.Text));
-
-            //Message.Text = "hej";
-
-
+            //Validerar så att inkommendata är valid.
             if (IsValid)
             {
+                //Objekt för en uträkning skapas.
                 Model.Receipt receipt = new Model.Receipt(double.Parse(TotalAmount.Text));
 
+                //Kvitto-data skrivs ut i olika labels.
                 Label1.Text += receipt.Subtotal.ToString("0.00") + " kr";
                 Label2.Text += receipt.DiscountRate.ToString("0") + " %";
                 Label3.Text += receipt.MoneyOff.ToString("0.00") + " kr";
                 Label4.Text += receipt.Total.ToString("0.00") + " kr";
 
+                //Kvittopanel sätts synlig
                 Panel2.Visible = true;
             }
             

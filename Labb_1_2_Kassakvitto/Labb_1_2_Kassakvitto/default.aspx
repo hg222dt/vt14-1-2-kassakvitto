@@ -51,6 +51,8 @@
                 </asp:Panel>
             </div>
         </form>
+        
+        <%-- Script för att skapa fokus samt att markera text i inmatningsfältet. --%>
         <script type="text/javascript">
             document.getElementById("TotalAmount").focus();
             document.getElementById("TotalAmount").select();
