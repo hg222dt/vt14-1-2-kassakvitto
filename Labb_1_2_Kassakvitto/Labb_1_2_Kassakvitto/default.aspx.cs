@@ -11,8 +11,6 @@ namespace Labb_1_2_Kassakvitto
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-            //this.TotalAmount.Attributes.Add("onkeypress", "CalculateButton_Click(this,'" + this.CalculateButton.ClientID + "')");
         }
 
         protected void CalculateButton_Click(object sender, EventArgs e)

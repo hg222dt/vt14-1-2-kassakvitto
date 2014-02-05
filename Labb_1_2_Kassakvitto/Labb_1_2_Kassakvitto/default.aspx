@@ -21,9 +21,15 @@
                     <asp:TextBox ID="TotalAmount" runat="server" ></asp:TextBox>
                     <span> kr</span>
                     <br />
+
+                    <%--Knapp för att beräkna rabatt och betalning --%>
                     <asp:Button ID="CalculateButton" runat="server" Text="Beräkna rabatt!" OnClick="CalculateButton_Click" />
+
+                    <%-- Validatorer --%>
                     <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Talet måste var större än noll." ControlToValidate="TotalAmount" Operator="GreaterThan" Type="Integer" ValueToCompare="0" Display="Dynamic" />
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Fältet får inte vara tomt." ControlToValidate="TotalAmount" Display="Dynamic" />
+                    
+                    <%-- Panel för kvittoutskrift --%>
                     <asp:Panel ID="Panel2" runat="server" visible="false">
                         <h3> Kvitto</h3>
                         <br />
