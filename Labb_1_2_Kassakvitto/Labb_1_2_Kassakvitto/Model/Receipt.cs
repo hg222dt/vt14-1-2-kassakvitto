@@ -28,7 +28,7 @@ namespace Labb_1_2_Kassakvitto.Model
                 }
                 else
                 {
-                    //kasta undantag?
+                    throw new ArgumentOutOfRangeException();
                 }
             }
         }

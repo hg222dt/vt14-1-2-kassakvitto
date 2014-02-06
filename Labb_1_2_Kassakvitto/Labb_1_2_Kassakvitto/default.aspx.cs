@@ -31,11 +31,6 @@ namespace Labb_1_2_Kassakvitto
                 //Kvittopanel sätts synlig
                 Panel2.Visible = true;
             }
-            
-
-
-
-
         }
     }
 }
